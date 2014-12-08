@@ -7,5 +7,5 @@ Meteor wrapper for https://github.com/nostalgiaz/bootstrap-switch
 In a Meteor app directory, enter:
 
 ```bash
-$ meteor add ctjp:bootstrap-switch
+$ meteor add ctjp:meteor-bootstrap-switch
 ```
