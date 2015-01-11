@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ctjp:meteor-bootstrap-switch',
   summary: 'Meteor wrapper for https://github.com/nostalgiaz/bootstrap-switch',
-  version: '3.2.2_1',
+  version: '3.3.1_1',
   git: 'https://github.com/ctjp/meteor-bootstrap-switch.git'
 });
 
