@@ -1,8 +1,16 @@
 Package.describe({
   name: 'ctjp:meteor-bootstrap-switch',
-  summary: 'Meteor wrapper for https://github.com/nostalgiaz/bootstrap-switch',
-  version: '3.3.1_1',
+  summary: 'Meteor package for https://github.com/nostalgiaz/bootstrap-switch',
+  version: '3.3.1_2',
   git: 'https://github.com/ctjp/meteor-bootstrap-switch.git'
+});
+
+Package.registerBuildPlugin({
+  name: 'compileBootstrapSwitch',
+  use: [ 'ctjp:meteor-bootstrap-switch-assets' ],
+  sources: [
+    'plugin/import-less.js'
+  ]
 });
 
 Package.onUse(function(api) {
@@ -10,14 +18,10 @@ Package.onUse(function(api) {
 
   //== Use
   // Client only
-  api.use('jquery', 'client');
-
-  //== Add files
-  // Client only
-  api.addFiles([
-    'lib/bootstrap-switch/src/less/bootstrap2/bootstrap-switch.less',
-    'lib/bootstrap-switch/src/less/bootstrap3/bootstrap-switch.less',
-    'lib/bootstrap-switch/dist/js/bootstrap-switch.js',
+  api.use([
+    'jquery',
+    'less',
+    'ctjp:meteor-bootstrap-switch-assets'
   ], 'client');
 });
 
