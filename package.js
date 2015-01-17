@@ -7,7 +7,7 @@ Package.describe({
 
 Package.registerBuildPlugin({
   name: 'compileBootstrapSwitch',
-  use: [ 'ctjp:meteor-bootstrap-switch-assets' ],
+  use: [ 'ctjp:meteor-bootstrap-switch-assets@3.3.1_1' ],
   sources: [
     'plugin/import-less.js'
   ]
@@ -21,7 +21,7 @@ Package.onUse(function(api) {
   api.use([
     'jquery',
     'less',
-    'ctjp:meteor-bootstrap-switch-assets'
+    'ctjp:meteor-bootstrap-switch-assets@3.3.1_1'
   ], 'client');
 });
 
