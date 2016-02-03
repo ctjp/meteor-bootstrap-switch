@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ctjp:meteor-bootstrap-switch',
   summary: 'Meteor package for https://github.com/nostalgiaz/bootstrap-switch',
-  version: '3.3.1_4',
+  version: '3.3.1_5',
   git: 'https://github.com/ctjp/meteor-bootstrap-switch.git'
 });
 
@@ -12,6 +12,8 @@ Package.registerBuildPlugin({
 });
 
 Package.onUse(function(api) {
+  api.versionsFrom(['1.0', '1.2.1']);
+
   //== Use
   // Client only
   api.use([
